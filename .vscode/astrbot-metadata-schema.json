@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AstrBot Plugin Metadata",
+  "description": "AstrBot 插件 metadata.yaml 格式",
+  "type": "object",
+  "required": ["name", "desc", "version", "author"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "插件唯一标识名，需为合法 Python 标识符"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "插件市场等场景的展示名"
+    },
+    "short_desc": {
+      "type": "string",
+      "description": "插件市场卡片上的短描述"
+    },
+    "desc": {
+      "type": "string",
+      "description": "插件简短描述"
+    },
+    "version": {
+      "type": "string",
+      "description": "插件版本号，如 1.0.0 或 v1.0.0"
+    },
+    "author": {
+      "type": "string",
+      "description": "作者"
+    },
+    "repo": {
+      "type": "string",
+      "description": "插件仓库地址"
+    },
+    "support_platforms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "支持的平台适配器列表"
+    },
+    "astrbot_version": {
+      "type": "string",
+      "description": "AstrBot 兼容版本，PEP 440 格式"
+    }
+  }
+}

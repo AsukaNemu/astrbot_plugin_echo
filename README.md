@@ -1,14 +1,28 @@
-# astrbot-plugin-helloworld
+# astrbot_plugin_echo
 
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+AstrBot 插件 — 在群聊中收到 `/echo` 时，将内容私发给发送者。
 
-> [!NOTE]
-> This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
-> 
-> [AstrBot](https://github.com/AstrBotDevs/AstrBot) is an agentic assistant for both personal and group conversations. It can be deployed across dozens of mainstream instant messaging platforms, including QQ, Telegram, Feishu, DingTalk, Slack, LINE, Discord, Matrix, etc. In addition, it provides a reliable and extensible conversational AI infrastructure for individuals, developers, and teams. Whether you need a personal AI companion, an intelligent customer support agent, an automation assistant, or an enterprise knowledge base, AstrBot enables you to quickly build AI applications directly within your existing messaging workflows.
+## 用法
 
-# Supports
+在群聊中发送：
 
-- [AstrBot Repo](https://github.com/AstrBotDevs/AstrBot)
-- [AstrBot Plugin Development Docs (Chinese)](https://docs.astrbot.app/dev/star/plugin-new.html)
-- [AstrBot Plugin Development Docs (English)](https://docs.astrbot.app/en/dev/star/plugin-new.html)
+```
+/echo 今天吃了吗？
+```
+
+Bot 会将 `今天吃了吗？` 私发给发送者，不会在群内回复。
+
+## 安装
+
+将本仓库克隆或下载到 AstrBot 的插件目录：
+
+```
+AstrBot/data/plugins/astrbot_plugin_echo/
+```
+
+然后在 AstrBot WebUI 中启用插件。
+
+## 相关链接
+
+- [AstrBot](https://github.com/AstrBotDevs/AstrBot)
+- [插件开发文档](https://docs.astrbot.app/dev/star/plugin-new.html)
