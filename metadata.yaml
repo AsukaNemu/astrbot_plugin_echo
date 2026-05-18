@@ -1,7 +1,7 @@
 name: astrbot_plugin_echo
 display_name: 私发回声
 desc: 在群聊中收到 /echo 时，将内容私发给发送者。
-short_desc: 群聊 /echo，私聊送达。
+short_desc:  在群聊中收到 /echo 时，将内容私发给发送者。
 version: 0.1.0
 author: AsukaNemu
 repo: https://github.com/AsukaNemu/astrbot_plugin_echo

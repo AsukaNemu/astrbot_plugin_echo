@@ -1,5 +1,5 @@
 from astrbot.api.event import filter, AstrMessageEvent, MessageChain
-from astrbot.api.platform.message_type import MessageType
+from astrbot.api.platform import MessageType
 from astrbot.api.star import Context, Star
 from astrbot.core.platform.message_session import MessageSession
 
