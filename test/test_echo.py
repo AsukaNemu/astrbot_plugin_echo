@@ -5,6 +5,7 @@ AstrBot Echo 插件本地测试脚本
 """
 import asyncio
 import sys
+from pathlib import Path
 from typing import Any, List, Callable
 from dataclasses import dataclass
 
@@ -114,7 +115,7 @@ sys.modules['astrbot.core.platform'] = MockAstrbotModule.core.platform
 sys.modules['astrbot.core.platform.message_session'] = MockAstrbotModule.core.platform.message_session
 
 # 现在可以导入我们的插件了
-sys.path.insert(0, '..')
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from main import EchoPlugin
 
 # 导入模拟的类，方便测试使用

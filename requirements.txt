@@ -1,3 +1,2 @@
 # 测试环境依赖
 astrbot>=3.0.0
-asyncio
